@@ -18,6 +18,11 @@ public class BaseNew
 	driver = new ChromeDriver();
 	driver.get(UtilityNew.readDataFromPropertyFile("URL"));
 	driver.manage().window().minimize();
+	
+	
+	
+	
+	
 	Reporter.log("Launching browser",true);
 	
 	UtilityNew.wait(driver, 1000);
