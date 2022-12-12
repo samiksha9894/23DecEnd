@@ -14,9 +14,7 @@ public class BaseNew
 	 protected WebDriver driver;
 	 public void launchBrowser() throws IOException
 	 {
-	
 	   System.setProperty("webdriver.chrome.driver", "E:\\Software\\chromedriver_win32\\chromedriver.exe");
-	
 	driver = new ChromeDriver();
 	driver.get(UtilityNew.readDataFromPropertyFile("URL"));
 	driver.manage().window().minimize();
@@ -25,7 +23,6 @@ public class BaseNew
 	UtilityNew.wait(driver, 1000);
 	 }
 	  public static void closingBrowser(WebDriver driver) throws InterruptedException
-	 
 	  {
 	     Reporter.log("closing browser", true);
 	 
